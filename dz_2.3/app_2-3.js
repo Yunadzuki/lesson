@@ -7,6 +7,4 @@ const screensValue = [
 const screenPrice = 10000n;
 const percentage = 10;
 const fullPrice = 10000n;
-const bool = {
-	responsive: true} 
-console.log(typeof responsive)
+let responsive = screenPrice > percentage;
