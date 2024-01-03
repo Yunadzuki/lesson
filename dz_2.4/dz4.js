@@ -18,7 +18,7 @@ let fullPrice = screenPrice + servicePrice1 + servicePrice2;
 let per10 = fullPrice * 0.1;
 let servicePercentPrice = (Math.round(fullPrice - per10));
 if (servicePercentPrice >= 50000) {
-  alert = ('Сделаем скидку 10%');
+  alert('Сделаем скидку 10%');
 } else if (servicePercentPrice < 20000) {
   alert('Скидка не предусмотренна');
 } else if (servicePercentPrice > 20000 || servicePercentPrice < 40000) {
