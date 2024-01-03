@@ -7,4 +7,4 @@ const screensValue = [
 const screenPrice = 10000n;
 const percentage = 10;
 const fullPrice = 10000n;
-let responsive = screenPrice > percentage;
+let responsive = true;
