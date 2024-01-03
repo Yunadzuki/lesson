@@ -20,11 +20,11 @@ let servicePercentPrice = (Math.round(fullPrice - per10));
 if (servicePercentPrice >= 50000) {
   alert = ('Сделаем скидку 10%');
 } else if (servicePercentPrice < 20000) {
-  alert = ('Скидка не предусмотренна');
+  alert('Скидка не предусмотренна');
 } else if (servicePercentPrice > 20000 || servicePercentPrice < 40000) {
-  alert = ('Сделаем скидку 5%');
+  alert('Сделаем скидку 5%');
 } else if (servicePercentPrice < 0) {
-  alert = ('Что-то пошло не так');
+  alert('Что-то пошло не так');
 }
 //let percentage = 10
 //let fullPrice = 10000
