@@ -17,6 +17,7 @@ let servicePrice2 = +price2;
 let fullPrice = screenPrice + servicePrice1 + servicePrice2;
 let per10 = fullPrice * 0.1;
 let servicePercentPrice = (Math.round(fullPrice - per10));
+let allServicePrices;
 //if (servicePercentPrice >= 50000) {
 //  console.log('Сделаем скидку 10%');
 //} else if (servicePercentPrice < 20000) {
@@ -36,18 +37,14 @@ let servicePercentPrice = (Math.round(fullPrice - per10));
 //console.log(servicePrice2);
 //console.log(fullPrice);
 //console.log(servicePercentPrice);
-let allServicePrices;
+
 const getAllServicePrices = function() {
-	allServicePrices = servicePrice1 + servicePrice2;
-	return allServicePrices;
+	return allServicePrices = servicePrice1 + servicePrice2;
 }
 
-getAllServicePrices();
 function getFullPrice() {
-	fullPrice = screenPrice + allServicePrices;
-	return fullPrice;
+	return fullPrice = screenPrice + allServicePrices;
 }
-getFullPrice();
 
 let firstChar;
 let upperFirstChar;
@@ -57,24 +54,21 @@ function getTitle() {
 	firstChar = titleProject.charAt(0);
 	upperFirstChar = firstChar.toUpperCase();
 	restOfString = titleProject.slice(1);
-	result = upperFirstChar + restOfString;
-	return result;
-	
+	return result = upperFirstChar + restOfString;
 }
-getTitle();
+
 console.log('Название проекта "', result, '"')
 
 function getServicePercentPrices() {
 	return servicePercentPrice;
 }
-getServicePercentPrices();
-console.log('Стоимость с учётом скидки', servicePercentPrice);
 
+console.log('Стоимость с учётом скидки', servicePercentPrice);
 
 function showTypeOf() {
 	console.log('Типы экранов ', screensValue);
 }
-showTypeOf()
+
 
 function getRollbackMessage() {
 	if (servicePercentPrice >= 50000) {
@@ -87,4 +81,16 @@ function getRollbackMessage() {
 		  alert('Что-то пошло не так');
 		}
 	}
+
+
+getAllServicePrices();
+getFullPrice();
+getTitle();
+getServicePercentPrices();
+showTypeOf()
 getRollbackMessage();
+
+do {
+	System.out.println(screenPrice);
+    screenPrice++;
+} while(screenPrice &lt;= 10000);
